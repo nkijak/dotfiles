@@ -1,0 +1,7 @@
+[user]
+	email = nkijak@gmail.com
+	name = Nicolas Kijak
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = simple

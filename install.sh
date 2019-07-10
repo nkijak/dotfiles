@@ -10,3 +10,10 @@ if [ $(uname) == 'Linux' ]; then
   echo "Installing i3 config"
   ./i3/install.sh
 fi
+
+echo "Configuring git"
+if [ -f ~/.gitconfig ]; then
+  echo "gitconfig file exists. will not modify"
+else
+  ln -svf ~/.dotfiles/.gitconfig ~/.gitconfig
+fi
