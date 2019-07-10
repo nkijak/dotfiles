@@ -111,13 +111,6 @@ filetype plugin on
 filetype plugin indent on
 
 
-
-" yeah, maybe checkout neocomplete so you have suggestions if not
-" 'autocomplete'.  Sometimes it works if you have the right plugins 
-" otherwise its just a 'here are other things in this document that start with
-" what you typed' thing
-let g:neocomplcache_enable_at_startup = 1
-
 " launch ctags, was defined as map <S-Tab> :!/usr/local/bin/ctags --recurse --sort=yes .<CR>
 " 'S' is Shift
 map <S-Tab> :!ctags --recurse --sort=yes .<CR>
@@ -128,4 +121,10 @@ au BufReadPost *.sbt set syntax=scala
 
 " trying to get better copy and paste working
 set clipboard=unnamed
+
+
+" configuration for wal.vim plugin (here because vim-script expansion is
+" deprecated)
+" https://github.com/dylanaraps/wal.vim
+colorscheme wal
 

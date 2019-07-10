@@ -1,3 +1,5 @@
 #!/bin/env bash
-ln ~/.dotfiles/vim/.vimrc ~/.vimrc
-ln ~/.dotfiles/vim/.vim ~/.vim
+ln -svf ~/.dotfiles/vim/.vimrc ~
+ln -svf ~/.dotfiles/vim/.vim ~
+
+vim +PlugUpgrade +PlugUpdate +qall
