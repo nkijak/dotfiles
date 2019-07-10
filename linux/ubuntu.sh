@@ -6,4 +6,4 @@
 apt install -y build-essentials
 
 # install i3-wm
-apt install -y i3 i3blocks
+apt install -y i3 i3blocks rofi
