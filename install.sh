@@ -17,3 +17,6 @@ if [ -f ~/.gitconfig ]; then
 else
   ln -svf ~/.dotfiles/.gitconfig ~/.gitconfig
 fi
+
+echo "Installing bash config"
+./bash/install.sh

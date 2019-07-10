@@ -1,0 +1,6 @@
+set -o vi
+
+ulimit -S -n 1024
+
+export EDITOR=vim
+export TERM=xterm-color
