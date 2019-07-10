@@ -1,6 +1,12 @@
+if [ -f ~/.bashrc.local ]; then
+  source ~/.bashrc.local
+fi
+
 set -o vi
 
 ulimit -S -n 1024
 
 export EDITOR=vim
 export TERM=xterm-color
+
+export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"

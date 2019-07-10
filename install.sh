@@ -20,3 +20,6 @@ fi
 
 echo "Installing bash config"
 ./bash/install.sh
+
+echo "Installing brew"
+./brew.sh

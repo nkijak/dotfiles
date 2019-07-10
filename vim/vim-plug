@@ -1,18 +1,17 @@
 " configuration for vim-plug 
 " https://github.com/junegunn/vim-plug
 " directory for vim-plug plugins to live
+" sourced in .vimrc 
 call plug#begin('~/.vim/plugged')
 
+Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dylanaraps/wal.vim'
-
-" on demand load of this when triggered
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'mileszs/ack.vim', { 'on': 'Ack' }
-Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+Plug 'mileszs/ack.vim'
+Plug 'majutsushi/tagbar'
 
 " Initialize plugin system
 call plug#end()

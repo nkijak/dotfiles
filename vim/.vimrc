@@ -128,3 +128,4 @@ set clipboard=unnamed
 " https://github.com/dylanaraps/wal.vim
 colorscheme wal
 
+source ~/.vim/plugin_settings.vim
