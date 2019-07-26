@@ -6,6 +6,7 @@ elif [ -f ~/.bashrc ] ; then
   mv ~/.bashrc ~/.bashrc.local
 fi
 if [ "$exitcode" -eq 0 ]; then 
+  echo "linking bashrc"
   ln -sv ~/.dotfiles/bash/bashrc ~/.bashrc
 fi
 
@@ -17,6 +18,7 @@ elif [ -f ~/.bash_profile ]; then
 fi
 
 if [ "$exitcode" -lt 2 ]; then 
+  echo "linking bash_profile"
   ln -sv ~/.dotfiles/bash/bash_profile ~/.bash_profile
 fi
 
