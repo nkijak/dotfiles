@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -d ~/.dotfiles ]; then
+  echo "You need to install this directory in your home dorectory as '.dotfiles'"
+  exit -1
+fi
+
 echo "Installing vim"
 ./vim/install.sh
 

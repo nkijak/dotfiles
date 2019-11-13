@@ -9,4 +9,4 @@ ulimit -S -n 1024
 export EDITOR=vim
 export TERM=xterm-color
 
-export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="/home/nkijak/.linuxbrew/bin:/home/nkijak/.linuxbrew/sbin:$PATH"

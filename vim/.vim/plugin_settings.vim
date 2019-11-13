@@ -35,3 +35,5 @@ let g:tagbar_type_scala = {
         \ 'm:methods'
     \ ]
 \ }
+
+let g:vimwiki_list = [{'path':'~/vimwiki/', 'syntax':'markdown', 'ext':'.md'}]
