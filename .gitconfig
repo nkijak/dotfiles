@@ -1,7 +1,9 @@
 [user]
-	email = nkijak@gmail.com
+	email = nick.kijak@pngaming.com
 	name = Nicolas Kijak
 [credential]
 	helper = cache --timeout=3600
 [push]
 	default = simple
+[pull]
+	rebase = false
