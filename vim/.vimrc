@@ -128,4 +128,7 @@ set clipboard=unnamed
 " https://github.com/dylanaraps/wal.vim
 colorscheme wal
 
+nmap <silent> <leader>ff :NERDTreeFind<CR>
 source ~/.vim/plugin_settings.vim
+
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']

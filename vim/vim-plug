@@ -13,6 +13,8 @@ Plug 'dylanaraps/wal.vim'
 Plug 'mileszs/ack.vim'
 Plug 'majutsushi/tagbar'
 Plug 'vimwiki/vimwiki'
+Plug 'lifepillar/vim-solarized8'
+Plug 'dsimidzija/vim-nerdtree-ignore'
 
 " Initialize plugin system
 call plug#end()

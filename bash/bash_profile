@@ -1,3 +1,12 @@
+echo "Appending pyenv to path"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)";
+fi
+
+
+#alias mypath=tr ':' '\n' <<< "$PATH"
+
+
 if [[ $OSTYPE == darwin* ]]; then
   . ~/.bash_darwin
 fi
@@ -10,3 +19,8 @@ fi
 if [ -f ~/.bash_local ]; then
   . ~/.bash_local
 fi
+
+
+export PATH="$HOME/.poetry/bin:$PATH"
+
+source /Users/Nick-Kijak/.config/broot/launcher/bash/br
