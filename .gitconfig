@@ -1,9 +1,14 @@
 [user]
-	email = nick.kijak@pngaming.com
-	name = Nicolas Kijak
+	email = nick.kijak@penn-interactive.com
+	name = Nick Kijak
 [credential]
 	helper = cache --timeout=3600
 [push]
 	default = simple
 [pull]
 	rebase = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

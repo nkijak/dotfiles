@@ -11,3 +11,5 @@ export EDITOR=vim
 export TERM=xterm-color
 
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+source /Users/Nick-Kijak/.config/broot/launcher/bash/br

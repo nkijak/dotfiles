@@ -22,3 +22,5 @@ fi
 
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+source /Users/Nick-Kijak/.config/broot/launcher/bash/br
