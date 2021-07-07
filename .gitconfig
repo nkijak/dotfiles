@@ -1,5 +1,5 @@
 [user]
-	email = nick.kijak@penn-interactive.com
+	email = nick.kijak@smartthings.com
 	name = Nick Kijak
 [credential]
 	helper = cache --timeout=3600

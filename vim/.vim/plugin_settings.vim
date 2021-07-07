@@ -36,8 +36,9 @@ let g:tagbar_type_scala = {
     \ ]
 \ }
 
-let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'etc': '.wiki'}]
+let g:vimwiki_list = [{'path': '~/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 
 colorscheme solarized8
 
 let g:coc_node_path = '/usr/local/bin/node'
+
