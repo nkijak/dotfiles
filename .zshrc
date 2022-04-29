@@ -126,6 +126,19 @@ PATH=$PATH:$HOME/code/iot/av-infra/scripts/
 # pyenv
 if which pyenv-virtualenv-init > /dev/null; then 
   echo "starting pyenv"
+  eval "$(pyenv init -)";
   eval "$(pyenv virtualenv-init -)"; 
 fi
+
+# https://starship.rs -- ps1 thingy
+eval "$(starship init zsh)"
+
+eval $(docker-machine env default)
+
+# android stuff
+export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/build-tools/29.3.0
+# cargo bins
+PATH=$PATH:$HOME/.cargo/bin
+export JAVA_HOME='/Applications/Android Studio.app/Contents/jre/Contents/Home'
+export KUBECONFIG=~/.kube/config:`ls ~/.kube/*.config | tr "\n" ":"`
 

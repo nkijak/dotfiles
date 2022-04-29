@@ -42,3 +42,6 @@ colorscheme solarized8
 
 let g:coc_node_path = '/usr/local/bin/node'
 
+" vim-airline
+"let g:airline#extensions#tabline#enabled = 1
+
