@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# removed because I didnt import themes
+#rofi_command="rofi -theme themes/powermenu.rasi"
+rofi_command="rofi"
+
+### Options ###
+#power_off=""
+#reboot=""
+#lock=""
+#suspend="鈴"
+#log_out=""
+power_off="shutdown"
+reboot="reboot"
+suspend="suspend"
+log_out="logout"
+# Variable passed to rofi
+#options="$power_off\n$reboot\n$lock\n$suspend\n$log_out"
+options="$power_off\n$reboot\n$suspend\n$log_out"
+
+chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)"
+case $chosen in
+    $power_off)
+        systemctl poweroff
+        ;;
+    $reboot)
+        systemctl reboot
+        ;;
+    #$lock)
+    #    light-locker-command -l
+    #    ;;
+    $suspend)
+        mpc -q pause
+        #amixer set Master mute # this "breaks" volume and ATM only a restart gets it back
+        systemctl suspend
+        ;;
+    $log_out)
+        i3-msg exit
+        ;;
+esac
+
