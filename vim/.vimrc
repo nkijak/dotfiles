@@ -126,6 +126,6 @@ set clipboard=unnamed
 " configuration for wal.vim plugin (here because vim-script expansion is
 " deprecated)
 " https://github.com/dylanaraps/wal.vim
-colorscheme wal
+#colorscheme wal
 
 source ~/.vim/plugin_settings.vim
